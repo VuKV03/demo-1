@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onload</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li>Mục 1</li>
+      <li>Mục 2</li>
+      <li>Mục 3</li>
+    </ul>
+
+    <script>
+      window.onload = () => {
+        const listLi = document.querySelectorAll("#menu li");
+        console.log(listLi);
+      };
+    </script>
+  </body>
+</html>

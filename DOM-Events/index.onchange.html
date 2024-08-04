@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="status" id="status">
+      <option value="all">Tất cả</option>
+      <option value="initial">Chờ kích hoạt</option>
+      <option value="active">Đang hoạt động</option>
+      <option value="inactive">Dừng hoạt động</option>
+    </select>
+
+    <script>
+      const selectStatus = document.querySelector("#status");
+
+      selectStatus.onchange = (e) => {
+        const selected = e.target.value;
+
+        switch (selected) {
+          case "all":
+            console.log("Tất cả");
+            break;
+          case "initial":
+            console.log("Chờ kích hoạt");
+            break;
+          case "active":
+            console.log("Đang hoạt động");
+            break;
+          case "inactive":
+            console.log("Dừng hoạt động");
+            break;
+
+          default:
+            break;
+        }
+      };
+    </script>
+  </body>
+</html>
