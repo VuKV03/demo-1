@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>onfocus</title>
-</head>
-<body>
-  <input id="fullName" type="text">
-  <script>
-    const inputFullName = document.querySelector("#fullName");
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onfocus</title>
+  </head>
+  <body>
+    <!-- <input id="fullName" type="text"> -->
+    <button id="siuu">Siuu</button>
+    <script>
+      const inputFullName = document.querySelector("#fullName");
 
-    inputFullName.onfocus = (e) => {
-      e.target.style.background = "yellow";
-    }
-  </script>
-</body>
+      // inputFullName.onfocus = (e) => {
+      //   e.target.style.background = "yellow";
+      // }
+
+      const buttonSiuu = document.querySelector("#siuu");
+      buttonSiuu.onfocus = (e) => {
+        console.log("siuu");
+      };
+    </script>
+  </body>
 </html>
