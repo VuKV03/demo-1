@@ -1,6 +1,6 @@
-const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3];
 numbers.forEach((item, index) => {
   numbers[index] = item * 2;
 })
 
-console.log(numbers);
+console.log(numbers); // [2, 4, 6]
